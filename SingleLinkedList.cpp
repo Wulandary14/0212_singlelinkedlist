@@ -51,6 +51,19 @@ public:
                 cout << "\nDuplikasi noMhs Tidak diijinkan\n";
                 return;
             }
+            previous = current;
+            current = current->next;
         }
+
+        nodeBaru->next = current;
+        previous->next = nodeBaru;
     }
+
+    bool listEmpty()
+    {
+        return (START == NULL);
+    }
+
+    bool search(int nim, Node *&previous, Node *&current_exception)
+    {}
 }
