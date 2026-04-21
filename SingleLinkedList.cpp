@@ -96,17 +96,30 @@ public:
 
     void traverse()
     {
-        cout << "\nList Kososng\n";
-    }
-    else
-    {
-        cout << "\nData Didalam List adalah:\n";
-        Node *currentNode = START;
-
-        while (currentNode !=NULL)
+        if (listEmpty())
         {
-            cout << currentNode->noMhs << endl;
-            currentNode = currentNode->next;
+        cout << "\nList Kososng\n";
+        }
+        else
+        {
+            cout << "\nData Didalam List adalah:\n";
+            Node *currentNode = START;
+
+            while (currentNode !=NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout <<endl;
         }
     }
+};
+
+int main()
+{
+    LinkedList mhs;
+    int nim;
+    char ch;
 }
+
+
