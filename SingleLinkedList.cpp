@@ -26,5 +26,18 @@ public:
         cin >> nim;
 
         Node *nodeBaru = new Node;
+        nodeBaru->noMhs = nim;
+
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if (START !=NULL || nim <= START->noMhs)
+            {
+                cout << "\nDuplikasi noMhs Tidak diijinkan\n";
+                return;
+            }
+
+            nodeBaru->next = START;
+            START = nodeBaru;
+        }
     }
 }
