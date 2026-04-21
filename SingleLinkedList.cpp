@@ -120,6 +120,20 @@ int main()
     LinkedList mhs;
     int nim;
     char ch;
+
+    do
+    {
+        cout << "\nMenu" << endl;
+        cout << "1. Menambah Data Kedalam List" << endl;
+        cout << "2. Menghapus Data dari Dalam List" << endl;
+        cout << "3. Menampilkan Semua Data didalam List" << endl;
+        cout << "4. Mencari Data dalam List" << endl;
+        cout << "5. Keluar" << endl;
+
+        cout << "\nMasukkan Pilihan (1-5): ";
+        cin >> ch;
+
+        
+    }
+    
 }
-
-
