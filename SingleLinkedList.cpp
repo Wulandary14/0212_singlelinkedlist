@@ -94,5 +94,19 @@ public:
             return true;
     }
 
-    void tracerse
+    void traverse()
+    {
+        cout << "\nList Kososng\n";
+    }
+    else
+    {
+        cout << "\nData Didalam List adalah:\n";
+        Node *currentNode = START;
+
+        while (currentNode !=NULL)
+        {
+            cout << currentNode->noMhs << endl;
+            currentNode = currentNode->next;
+        }
+    }
 }
