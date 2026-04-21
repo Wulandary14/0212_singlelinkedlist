@@ -65,5 +65,21 @@ public:
     }
 
     bool search(int nim, Node *&previous, Node *&current_exception)
-    {}
+    {
+        previous = START;
+        current = START;
+
+        while (current !=NULL && nim != current->noMhs)
+        {
+            previous = current;
+            current = current->next;
+        }
+
+        return (current !=NULL);
+    }
+
+    bool delNode(int nim)
+    {
+        
+    }
 }
